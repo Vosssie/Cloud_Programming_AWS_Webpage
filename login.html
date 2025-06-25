@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/amazon-cognito-identity-js@5.0.3/dist/amazon-cognito-identity.min.js"></script>
+    <script src="auth-config.js"></script>
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="error-message" style="color: red;"></p>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+</body>
+</html>
